@@ -1,0 +1,7 @@
+:root {
+  --primary: hsl(200, 100%, 79%);
+  --secondary: hsl(150, 49%, 69%);
+
+  --primary-base: 200, 100%;
+  --secondary-base: 150, 49%;
+}
