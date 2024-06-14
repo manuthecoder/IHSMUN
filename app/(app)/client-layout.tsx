@@ -117,6 +117,18 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
               color: "hsl(var(--secondary-base), 20%)",
             },
           },
+          "& table": {
+            maxWidth: "100%",
+            borderCollapse: "collapse",
+            "& th": {
+              borderBottom: "1px solid #ddd",
+              p: 2,
+            },
+            "& td": {
+              p: 2,
+              borderBottom: "1px solid #ddd",
+            },
+          },
           "& .call-to-action": {
             borderRadius: 5,
             background: "black",

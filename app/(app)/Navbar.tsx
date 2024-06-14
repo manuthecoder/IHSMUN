@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
+import Link from "next/link";
 
 export function Navbar() {
   const trigger = useScrollTrigger({ threshold: 650, disableHysteresis: true });
@@ -31,16 +32,20 @@ export function Navbar() {
         }}
       >
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
+          <Link
+            href="/"
             color="inherit"
             aria-label="menu"
-            sx={{ mr: 2 }}
+            style={{
+              fontSize: 20,
+              fontWeight: 900,
+              textDecoration: "none",
+              color: "inherit",
+            }}
           >
             IHSMUN
-          </IconButton>
-          <Button color="inherit" href="/register">
+          </Link>
+          <Button color="inherit" href="/about">
             About
           </Button>
         </Toolbar>

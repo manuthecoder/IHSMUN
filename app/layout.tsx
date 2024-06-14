@@ -5,6 +5,7 @@ import * as React from "react";
 import { Navbar } from "./(app)/Navbar";
 import { ClientLayout } from "./(app)/client-layout";
 import "./globals.css";
+import { Footer } from "./(app)/Footer";
 
 const font = IBM_Plex_Sans({
   weight: ["500"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ClientLayout>
           <Navbar />
           {children}
+          <Footer />
           <CssBaseline />
         </ClientLayout>
       </body>

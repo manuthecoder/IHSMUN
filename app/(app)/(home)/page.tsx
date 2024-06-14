@@ -69,7 +69,7 @@ function Banner() {
             textAlign: "center",
             height: "100%",
             width: "100%",
-            px: "100px!important",
+            px: { xs: 2, sm: "100px!important" },
           }}
         >
           <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
