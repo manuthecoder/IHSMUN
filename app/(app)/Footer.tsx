@@ -58,6 +58,19 @@ export function Footer() {
           </Grid>
         </Grid>
       </Container>
+      <Box
+        sx={{
+          textAlign: "center",
+          py: 2,
+          color: "#aaa",
+          backgroundColor: "rgba(255,255,255,.1)",
+        }}
+      >
+        &copy; {new Date().getFullYear()} IHSMUN &bull; Created by{" "}
+        <Link href="https://manu.is-a.dev" color="inherit">
+          Manu G
+        </Link>
+      </Box>
     </Box>
   );
 }
