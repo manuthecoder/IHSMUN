@@ -4,7 +4,6 @@ import { useScrollTrigger } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "next/link";
 
@@ -29,6 +28,9 @@ export function Navbar() {
             transition: "color 0s !important",
           },
           backdropFilter: trigger ? "blur(5px)" : "blur(0px)",
+          "& .MuiButton-root": {
+            px: 2,
+          },
         }}
       >
         <Toolbar>
@@ -41,6 +43,7 @@ export function Navbar() {
               fontWeight: 900,
               textDecoration: "none",
               color: "inherit",
+              marginRight: 20,
             }}
           >
             IHSMUN
