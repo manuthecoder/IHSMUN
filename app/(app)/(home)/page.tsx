@@ -49,7 +49,7 @@ function Banner() {
       }}
     >
       <img
-        src="https://static.wixstatic.com/media/f398f7_9741f645b65b425eb2a92fc521d11441~mv2.jpg/v1/fill/w_668,h_825,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/f398f7_9741f645b65b425eb2a92fc521d11441~mv2.jpg"
+        src="https://www.un.org/sites/un2.un.org/files/styles/3x2-front-thumbnail/public/field/image/model_un_landing_page.jpg"
         alt="IHSMUN Logo"
       />
       <Box

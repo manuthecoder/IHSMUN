@@ -51,6 +51,9 @@ export function Navbar() {
           <Button color="inherit" href="/about">
             About
           </Button>
+          <Button color="inherit" href="/hall-of-fame">
+            Hall of fame
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>
