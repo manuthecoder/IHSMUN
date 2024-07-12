@@ -5,3 +5,6 @@
   --primary-base: 200, 100%;
   --secondary-base: 150, 49%;
 }
+.material-symbols-outlined {
+  font-family: "Material Symbols Outlined" !important;
+}

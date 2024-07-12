@@ -1,14 +1,33 @@
 "use client";
 
-import { useScrollTrigger } from "@mui/material";
+import { IconButton, SwipeableDrawer, useScrollTrigger } from "@mui/material";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Toolbar from "@mui/material/Toolbar";
 import Link from "next/link";
+import { useState } from "react";
 
 export function Navbar() {
   const trigger = useScrollTrigger({ threshold: 650, disableHysteresis: true });
+  const [open, setOpen] = useState(false);
+
+  const buttons = (
+    <>
+      <Button color="inherit" href="/about">
+        About
+      </Button>
+      <Button color="inherit" href="/conference-resources">
+        Conference resources
+      </Button>
+      <Button color="inherit" href="/committees">
+        Committees
+      </Button>
+      <Button color="inherit" href="/hall-of-fame">
+        Hall of fame
+      </Button>
+    </>
+  );
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -48,14 +67,39 @@ export function Navbar() {
           >
             IHSMUN
           </Link>
-          <Button color="inherit" href="/about">
-            About
-          </Button>
-          <Button color="inherit" href="/hall-of-fame">
-            Hall of fame
-          </Button>
+          <Box sx={{ display: { xs: "none", md: "flex" } }}>{buttons}</Box>
+          <IconButton
+            sx={{
+              ml: "auto",
+              display: { xs: "flex", md: "none" },
+              color: "inherit",
+            }}
+            onClick={() => setOpen(true)}
+          >
+            <span className="material-symbols-outlined">menu</span>
+          </IconButton>
         </Toolbar>
       </AppBar>
+
+      <SwipeableDrawer
+        anchor="bottom"
+        disableSwipeToOpen
+        open={open}
+        onClose={() => setOpen(false)}
+        onOpen={() => setOpen(true)}
+        PaperProps={{
+          style: {
+            borderRadius: "20px 20px 0 0",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            width: "100vw",
+            background: "white",
+          },
+        }}
+      >
+        {buttons}
+      </SwipeableDrawer>
     </Box>
   );
 }
