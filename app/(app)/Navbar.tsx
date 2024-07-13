@@ -65,7 +65,7 @@ export function Navbar() {
               marginRight: 20,
             }}
           >
-            IHSMUN
+            IHSIMUN
           </Link>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>{buttons}</Box>
           <IconButton

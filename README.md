@@ -1,1 +1,2 @@
-# IHSMUN website
+# IHSIMUN website
+

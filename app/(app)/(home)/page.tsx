@@ -50,7 +50,7 @@ function Banner() {
     >
       <img
         src="https://www.un.org/sites/un2.un.org/files/styles/3x2-front-thumbnail/public/field/image/model_un_landing_page.jpg"
-        alt="IHSMUN Logo"
+        alt="IHSIMUN Logo"
       />
       <Box
         sx={{
@@ -73,7 +73,7 @@ function Banner() {
           }}
         >
           <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
-            Welcome to IHSMUN
+            Welcome to IHSIMUN
           </Typography>
           <Typography variant="h6" sx={{ mb: 2 }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum

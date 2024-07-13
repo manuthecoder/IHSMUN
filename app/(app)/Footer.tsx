@@ -24,7 +24,7 @@ export function Footer() {
         >
           <Grid xs={12} sm={6}>
             <Typography variant="h1" sx={{ mt: 0 }}>
-              IHSMUN
+              IHSIMUN
             </Typography>
             <Typography variant="h6" sx={{ mb: 2 }}>
               Irvine High Model United Nations
@@ -66,7 +66,7 @@ export function Footer() {
           backgroundColor: "rgba(255,255,255,.1)",
         }}
       >
-        &copy; {new Date().getFullYear()} IHSMUN &bull; Created by{" "}
+        &copy; {new Date().getFullYear()} IHSIMUN &bull; Created by{" "}
         <Link href="https://manu.is-a.dev" color="inherit">
           Manu G
         </Link>
