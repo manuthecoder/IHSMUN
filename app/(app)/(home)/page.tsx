@@ -57,7 +57,7 @@ function Banner() {
           zIndex: 999,
           width: "100%",
           height: "100%",
-          backdropFilter: `blur(${trigger / 20}px)`,
+          backdropFilter: `blur(${Math.min(50, trigger / 20)}px)`,
         }}
       >
         <Container

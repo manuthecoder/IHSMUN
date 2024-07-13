@@ -46,13 +46,13 @@ export function Footer() {
             <Link href="/about" color="inherit">
               Registration Information
             </Link>
-            <Link href="/about" color="inherit">
+            <Link href="/committees" color="inherit">
               Committees
             </Link>
             <Link href="/about" color="inherit">
               Venue
             </Link>
-            <Link href="/about" color="inherit">
+            <Link href="/conference-resources" color="inherit">
               Delegate Information
             </Link>
           </Grid>
