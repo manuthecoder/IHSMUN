@@ -69,16 +69,17 @@ function Banner() {
             textAlign: "center",
             height: "100%",
             width: "100%",
-            px: { xs: 2, sm: "100px!important" },
+            px: { xs: 2, sm: "50px!important" },
           }}
         >
           <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
             Welcome to IHSIMUN
           </Typography>
           <Typography variant="h6" sx={{ mb: 2 }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
+            Welcome to the first iteration of the Irvine Invitational Model
+            United Nations at Irvine High School, in Irvine, California. It is
+            an honor and our pleasure to welcome you all to the first iteration
+            of the Irvine Invitational Conference at Irvine High School!
           </Typography>
 
           <Button
