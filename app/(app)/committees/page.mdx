@@ -1,5 +1,7 @@
 import { HeaderImage } from '@/app/(app)/components/HeaderImage'
-import { Container, Button } from '@mui/material'
+import { Container, Button, Card } from '@mui/material'
+import Grid from "@mui/material/Unstable_Grid2"
+import Link from "next/link"
 
 <HeaderImage src="https://placehold.co/600x400/303030/FFF" title="Committees" />
 
@@ -13,16 +15,37 @@ import { Container, Button } from '@mui/material'
     }
 }}>
     # Committees
-    ### [Middle School General Assembly](#!)
-        - MS UNOOSA: The Expansion of Global Satellite Intelligence Networks (example title)
-    ### [General Assembly Committees (Mains)](#!)
-        - Novice UNHCR: (committee title)
-        - Advanced UNEP: (Committee title)
-    ### [Specialized](#!)
-        - Lok Sabha: India/Pakistan conflict (specialized example title)
-    ### [Joint Crisis](#!)
-        - Overview of What crisis in general is
-        - Provide some context to the Crisis topic
-        - Crisis Background guide
-        - Refer to https://www.northwoodmun.com/jcc as an example.
+
+    <Grid container sx={{ "& *": { color: "white" }, mb: 5 }} spacing={2}>
+        <Grid xs={12} md={4}>
+            <Link style={{ textDecoration: "none" }} href="/committees/mains">
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/mains.png')", backgroundSize: "cover" }}>
+                    ### General Assembly Committees (Mains)
+                    - Novice UNHCR
+                    - Advanced UNEP
+                </Card>
+            </Link>
+        </Grid>
+        <Grid xs={12} md={4}>
+            <Link style={{ textDecoration: "none" }} href="/committees/crisis">
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/crisis.png')", backgroundSize: "cover" }}>
+                    ### Joint Crisis Committees
+                    - Overview of What crisis in general is
+                    - Provide some context to the Crisis topic
+                    - Crisis Background guide
+                    - Refer to [NorthwoodMUN](https://www.northwoodmun.com/jcc) as an example.
+                </Card>
+            </Link>
+        </Grid>
+        <Grid xs={12} md={4}>
+            <Link style={{ textDecoration: "none" }} href="/committees/specialized">
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/specialized.png')", backgroundSize: "cover" }}>
+                    ### Specialized Committees
+                    - Lok Sabha: India/Pakistan conflict
+                </Card>
+            </Link>
+        </Grid>
+    </Grid>
+    {/* ### [Middle School General Assembly](#!)
+        - MS UNOOSA: The Expansion of Global Satellite Intelligence Networks (example title) */}
 </Container>
