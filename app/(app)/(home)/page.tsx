@@ -87,7 +87,9 @@ function Banner() {
           style={{
             zIndex: 2,
             transform:
-              trigger !== 0 && `scale(${Math.min(2, 1 + trigger / 4000)})`,
+              trigger !== 0
+                ? `scale(${Math.min(2, 1 + trigger / 4000)})`
+                : undefined,
             transition: "transform 0.1s",
             animation: "slideUp 1s forwards",
           }}
