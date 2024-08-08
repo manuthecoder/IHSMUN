@@ -121,8 +121,10 @@ function Banner() {
             width: "100%",
             p: 5,
             mt: "auto",
-            alignItems: "center",
+            flexDirection: { xs: "column", md: "row" },
+            alignItems: { sm: "center" },
             gap: 5,
+            "& .btn": { flexShrink: 0, marginTop: { xs: 0, sm: "100px" } },
           }}
         >
           <Box>
@@ -140,8 +142,8 @@ function Banner() {
 
           <Button
             variant="contained"
-            style={{ flexShrink: 0, marginTop: 100 }}
             target="_blank"
+            className="btn"
             href="https://docs.google.com/forms/d/e/1FAIpQLScr5ZpAocO1NQxyjZmMeW5uE0sOFbUMlr8thS98xiEs0K37sw/viewform"
           >
             Register Now
