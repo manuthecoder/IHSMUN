@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   title: "IHSIMUN",
   description:
     "IHSIMUN is a Model United Nations conference hosted by Irvine High School.",
-
   openGraph: {
     images: ["/banner.png"],
   },
