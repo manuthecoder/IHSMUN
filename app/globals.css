@@ -8,3 +8,13 @@
 .material-symbols-outlined {
   font-family: "Material Symbols Outlined" !important;
 }
+
+@keyframes slideUp {
+  from {
+    margin-top: 100vh;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}

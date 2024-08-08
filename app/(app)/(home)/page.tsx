@@ -31,8 +31,6 @@ function Banner() {
         alignItems: "center",
         width: "100%",
         height: "100vh",
-        maxHeight: "calc(100vh - 60px)",
-        overflow: "hidden",
         position: "relative",
         pt: "90px",
         background: "black",
@@ -41,55 +39,78 @@ function Banner() {
           objectFit: "cover",
           width: "100%",
           height: "100%",
+          maxHeight: "100vh",
           position: "absolute",
           top: 0,
+          borderRadius: 0,
           left: 0,
-          opacity: 0.4,
         },
       }}
     >
       <img
-        src="https://www.un.org/sites/un2.un.org/files/styles/3x2-front-thumbnail/public/field/image/model_un_landing_page.jpg"
+        src="/home/text.png"
         alt="IHSIMUN Logo"
+        style={{
+          zIndex: 2,
+          transform: `scale(${Math.min(2, 1 + trigger / 4000)})`,
+          transition: "transform 0.1s",
+          animation: "slideUp 1s forwards",
+        }}
+      />
+      <img
+        src="/home/foreground.png"
+        alt="IHSIMUN Logo"
+        style={{
+          zIndex: 3,
+        }}
+      />
+      <img
+        src="/home/background.png"
+        alt="IHSIMUN Logo"
+        style={{
+          zIndex: 1,
+        }}
       />
       <Box
         sx={{
           zIndex: 999,
           width: "100%",
           height: "100%",
-          backdropFilter: `blur(${Math.min(50, trigger / 20)}px)`,
+          display: "flex",
         }}
       >
-        <Container
+        <Box
           sx={{
             display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            height: "100%",
             width: "100%",
-            px: { xs: 2, sm: "50px!important" },
+            p: 5,
+            mt: "auto",
+            alignItems: "center",
+            gap: 5,
           }}
         >
-          <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
-            Welcome to IHSIMUN
-          </Typography>
-          <Typography variant="h6" sx={{ mb: 2 }}>
-            Welcome to the first iteration of the Irvine Invitational Model
-            United Nations at Irvine High School, in Irvine, California. It is
-            an honor and our pleasure to welcome you all to the first iteration
-            of the Irvine Invitational Conference at Irvine High School!
-          </Typography>
+          <Box>
+            <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
+              Welcome to IHSIMUN
+            </Typography>
+            <Typography variant="h6" sx={{ mb: 2 }}>
+              Welcome to the first iteration of the Irvine Invitational Model
+              United Nations at Irvine High School, in Irvine, California. It is
+              an honor and our pleasure to welcome you all to the first
+              iteration of the Irvine Invitational Conference at Irvine High
+              School!
+            </Typography>
+          </Box>
 
           <Button
             variant="contained"
+            style={{ flexShrink: 0, marginTop: 100 }}
             target="_blank"
             href="https://docs.google.com/forms/d/e/1FAIpQLScr5ZpAocO1NQxyjZmMeW5uE0sOFbUMlr8thS98xiEs0K37sw/viewform"
           >
             Register Now
           </Button>
-        </Container>
+        </Box>
       </Box>
     </Box>
   );
