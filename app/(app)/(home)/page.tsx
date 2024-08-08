@@ -20,8 +20,45 @@ function useScrollProgress() {
   return progress;
 }
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+function useWindowDimensions() {
+  const [windowDimensions, setWindowDimensions] = useState(
+    getWindowDimensions()
+  );
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowDimensions(getWindowDimensions());
+    }
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return windowDimensions;
+}
+
 function Banner() {
   const trigger = useScrollProgress();
+
+  const { width, height } = useWindowDimensions();
+  const [textHidden, setTextHidden] = useState(false);
+
+  useEffect(() => {
+    // if aspect ratio width is less than 1450 958
+    if (width / height < 1450 / 958) {
+      setTextHidden(true);
+    } else {
+      setTextHidden(false);
+    }
+  }, [width, height]);
 
   return (
     <Box
@@ -47,16 +84,18 @@ function Banner() {
         },
       }}
     >
-      <img
-        src="/home/text.png"
-        alt="IHSIMUN Logo"
-        style={{
-          zIndex: 2,
-          transform: `scale(${Math.min(2, 1 + trigger / 4000)})`,
-          transition: "transform 0.1s",
-          animation: "slideUp 1s forwards",
-        }}
-      />
+      {!textHidden && (
+        <img
+          src="/home/text.png"
+          alt="IHSIMUN Logo"
+          style={{
+            zIndex: 2,
+            transform: `scale(${Math.min(2, 1 + trigger / 4000)})`,
+            transition: "transform 0.1s",
+            animation: "slideUp 1s forwards",
+          }}
+        />
+      )}
       <img
         src="/home/foreground.png"
         alt="IHSIMUN Logo"
