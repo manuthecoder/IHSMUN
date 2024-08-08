@@ -53,11 +53,7 @@ function Banner() {
 
   useEffect(() => {
     // if aspect ratio width is less than 1450 958
-    if (width / height < 1450 / 958) {
-      setTextHidden(true);
-    } else {
-      setTextHidden(false);
-    }
+    setTextHidden(width / height < 1450 / 958);
   }, [width, height]);
 
   return (
@@ -90,7 +86,8 @@ function Banner() {
           alt="IHSIMUN Logo"
           style={{
             zIndex: 2,
-            transform: `scale(${Math.min(2, 1 + trigger / 4000)})`,
+            transform:
+              trigger !== 0 && `scale(${Math.min(2, 1 + trigger / 4000)})`,
             transition: "transform 0.1s",
             animation: "slideUp 1s forwards",
           }}
