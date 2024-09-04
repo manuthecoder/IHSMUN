@@ -129,6 +129,13 @@ export function ClientLayout({ children }: { children: React.ReactNode }) {
               borderBottom: "1px solid #ddd",
             },
           },
+          "& iframe": {
+            maxWidth: "100%",
+            width: "100%",
+            aspectRatio: "16 / 9",
+            border: "2px solid #aaa",
+            my: 1,
+          },
           "& .call-to-action": {
             borderRadius: 5,
             background: "black",
