@@ -26,6 +26,9 @@ export function Navbar() {
       <Button color="inherit" href="/hall-of-fame">
         Hall of fame
       </Button>
+      <Button color="inherit" href="/presentation-resources">
+        Presentation resources
+      </Button>
     </>
   );
 
