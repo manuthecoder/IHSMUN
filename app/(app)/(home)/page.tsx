@@ -136,11 +136,9 @@ function Banner() {
               Welcome to IHSIMUN
             </Typography>
             <Typography variant="h6" sx={{ mb: 2 }}>
-              Welcome to the first iteration of the Irvine Invitational Model
-              United Nations at Irvine High School, in Irvine, California. It is
-              an honor and our pleasure to welcome you all to the first
+              It is an honor and our pleasure to welcome you all to the first
               iteration of the Irvine Invitational Conference at Irvine High
-              School!
+              School, California.
             </Typography>
           </Box>
 
