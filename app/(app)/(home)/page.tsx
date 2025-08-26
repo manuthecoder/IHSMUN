@@ -136,7 +136,7 @@ function Banner() {
               Welcome to IHSIMUN
             </Typography>
             <Typography variant="h6" sx={{ mb: 2 }}>
-              It is an honor and our pleasure to welcome you all to the first
+              It is an honor and our pleasure to welcome you all to the second
               iteration of the Irvine Invitational Conference at Irvine High
               School, California.
             </Typography>
@@ -146,7 +146,7 @@ function Banner() {
             variant="contained"
             target="_blank"
             className="btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScr5ZpAocO1NQxyjZmMeW5uE0sOFbUMlr8thS98xiEs0K37sw/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScDft-7vHsaZ6cA1hRc5cEZUkD-cCx6XJ1K5Um3DstO0C2L5A/viewform?usp=header"
           >
             Register Now
           </Button>
