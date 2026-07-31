@@ -19,7 +19,7 @@ import Link from "next/link";
     <Grid container sx={{ "& *": { color: "white" }, mb: 5 }} spacing={1}>
         <Grid xs={12} md={4}>
             <Link style={{ textDecoration: "none" }} href="/committees/mains">
-                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/novice.jpg')", backgroundSize: "cover" }}>
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/novice.jpg')", backgroundSize: "cover", transition: "box-shadow 0.3s ease-in-out", "&:hover": { boxShadow: "0 0 0 3px #1976d2" } }}>
                     ### Middle School & Novice
                     - MS SPECPOL
                     - Novice: International Olympics Committee
@@ -30,7 +30,7 @@ import Link from "next/link";
         </Grid>
         <Grid xs={12} md={4}>
             <Link style={{ textDecoration: "none" }} href="/committees/advanced">
-                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/mains.jpg')", backgroundSize: "cover" }}>
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/mains.jpg')", backgroundSize: "cover", transition: "box-shadow 0.3s ease-in-out", "&:hover": { boxShadow: "0 0 0 3px #1976d2" } }}>
                     ### Advanced
                     - Advanced IAEA
                     - Advanced UNEA
@@ -39,7 +39,7 @@ import Link from "next/link";
         </Grid>
         <Grid xs={12} md={4}>
             <Link style={{ textDecoration: "none" }} href="/committees/crisis">
-                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/crisis.jpg')", backgroundSize: "cover" }}>
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/crisis.jpg')", backgroundSize: "cover", transition: "box-shadow 0.3s ease-in-out", "&:hover": { boxShadow: "0 0 0 3px #1976d2" } }}>
                     ### Crisis Committee
                     - The 9/11 Commission
                 </Card>
@@ -48,7 +48,7 @@ import Link from "next/link";
         <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
         <Grid xs={12} md={4}>
             <Link style={{ textDecoration: "none" }} href="/committees/specialized">
-                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/specialized.jpg')", backgroundSize: "cover" }}>
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/specialized.jpg')", backgroundSize: "cover", transition: "box-shadow 0.3s ease-in-out", "&:hover": { boxShadow: "0 0 0 3px #1976d2" } }}>
                     ### Specialized Committees
                     - FIFA Council
                 </Card>
