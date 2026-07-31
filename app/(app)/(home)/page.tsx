@@ -146,7 +146,7 @@ function Banner() {
             variant="contained"
             target="_blank"
             className="btn"
-            href="https://docs.google.com/forms/d/e/1FAIpQLScDft-7vHsaZ6cA1hRc5cEZUkD-cCx6XJ1K5Um3DstO0C2L5A/viewform?usp=header"
+            href="https://docs.google.com/forms/d/1Qb4fyQ9srmuGpI5SnWSjoDKjaul9joiYKAdVQnIBLEk/viewform?usp=header"
           >
             Register Now
           </Button>
