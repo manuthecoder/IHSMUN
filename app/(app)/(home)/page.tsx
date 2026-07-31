@@ -136,7 +136,7 @@ function Banner() {
               Welcome to IHSIMUN
             </Typography>
             <Typography variant="h6" sx={{ mb: 2 }}>
-              It is an honor and our pleasure to welcome you all to the second
+              It is an honor and our pleasure to welcome you all to the third
               iteration of the Irvine Invitational Conference at Irvine High
               School, California.
             </Typography>
