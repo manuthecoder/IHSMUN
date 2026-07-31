@@ -1,40 +1,60 @@
-<Grid container sx={{ "& *": { color: "white" }, mb: 5 }} spacing={1}>
-    <Grid xs={12} md={4}>
-        <Link style={{ textDecoration: "none" }} href="/committees/mains">
-            <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/mains.jpg')", backgroundSize: "cover" }}>
-                ### Middle School & Novice
-                - MS SPECPOL
-                - Novice: International Olympics Committee
-                - Novice: GA 6th Legal Committee
-                - Novice: US Senate
-            </Card>
-        </Link>
+import { HeaderImage } from "@/app/(app)/components/HeaderImage";
+import { Container, Button, Card } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2";
+import Link from "next/link";
+
+<HeaderImage src="/home/background.png" title="Committees" />
+
+<Container sx={{
+    "& a": {
+        color: "#2e8b57",
+        textDecorationColor: "rgba(46, 139, 87, .5)",
+        "&:hover": {
+            textDecorationColor: "rgba(46, 139, 87, 1)",
+        }
+    }
+}}>
+    # Committees
+
+    <Grid container sx={{ "& *": { color: "white" }, mb: 5 }} spacing={1}>
+        <Grid xs={12} md={4}>
+            <Link style={{ textDecoration: "none" }} href="/committees/mains">
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/mains.jpg')", backgroundSize: "cover" }}>
+                    ### Middle School & Novice
+                    - MS SPECPOL
+                    - Novice: International Olympics Committee
+                    - Novice: GA 6th Legal Committee
+                    - Novice: US Senate
+                </Card>
+            </Link>
+        </Grid>
+        <Grid xs={12} md={4}>
+            <Link style={{ textDecoration: "none" }} href="/committees/advanced">
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/mains.jpg')", backgroundSize: "cover" }}>
+                    ### Advanced
+                    - Advanced IAEA
+                    - Advanced UNEA
+                </Card>
+            </Link>
+        </Grid>
+        <Grid xs={12} md={4}>
+            <Link style={{ textDecoration: "none" }} href="/committees/crisis">
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/crisis.jpg')", backgroundSize: "cover" }}>
+                    ### Crisis Committee
+                    - The 9/11 Commission
+                </Card>
+            </Link>
+        </Grid>
+        <Grid xs={12} md={4}>
+            <Link style={{ textDecoration: "none" }} href="/committees/specialized">
+                <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/specialized.jpg')", backgroundSize: "cover" }}>
+                    ### Specialized Committees
+                    - FIFA Council
+                </Card>
+            </Link>
+        </Grid>
     </Grid>
-    <Grid xs={12} md={4}>
-        <Link style={{ textDecoration: "none" }} href="/committees/advanced">
-            <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/mains.jpg')", backgroundSize: "cover" }}>
-                ### Advanced
-                - Advanced IAEA
-                - Advanced UNEA
-            </Card>
-        </Link>
-    </Grid>
-    <Grid xs={12} md={4}>
-        <Link style={{ textDecoration: "none" }} href="/committees/crisis">
-            <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/crisis.jpg')", backgroundSize: "cover" }}>
-                ### Crisis Committee
-                - The 9/11 Commission
-            </Card>
-        </Link>
-    </Grid>
-    <Grid xs={12} md={4}>
-        <Link style={{ textDecoration: "none" }} href="/committees/specialized">
-            <Card sx={{ p: 2, height:"100%", backgroundImage: "linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('/banners/specialized.jpg')", backgroundSize: "cover" }}>
-                ### Specialized Committees
-                - FIFA Council
-            </Card>
-        </Link>
-    </Grid>
-</Grid>
-{/* ### [Middle School General Assembly](#!)
-    - MS UNOOSA: The Expansion of Global Satellite Intelligence Networks (example title) */}
+    {/* ### [Middle School General Assembly](#!)
+        - MS UNOOSA: The Expansion of Global Satellite Intelligence Networks (example title) */}
+
+</Container>
