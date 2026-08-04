@@ -150,6 +150,24 @@ function Banner() {
           >
             Register Now
           </Button>
+          <br />
+          <Box>
+            <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
+              Join our mailing list
+            </Typography>
+            <Typography variant="h6" sx={{ mb: 2 }}>
+              Recieve important updates via email and stay up to date for IHSIMUN 2026.
+            </Typography>
+          </Box>
+
+          <Button
+            variant="contained"
+            target="_blank"
+            className="btn"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfzWNgT8WNG-WxXJBnCtvmfp9NHen_VGJwOsZNxOlJ5OTx_jQ/viewform?usp=header"
+          >
+            Register Now
+          </Button>
         </Box>
       </Box>
     </Box>
