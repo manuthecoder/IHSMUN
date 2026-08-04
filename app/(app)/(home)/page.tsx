@@ -150,7 +150,9 @@ function Banner() {
           >
             Register Now
           </Button>
-          <br />
+
+          <Box sx={{ flexBasis: '100%', height: 0 }} />
+          
           <Box>
             <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
               Join our mailing list
