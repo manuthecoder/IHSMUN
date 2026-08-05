@@ -167,7 +167,7 @@ function Banner() {
             className="btn"
             href="https://docs.google.com/forms/d/e/1FAIpQLSfzWNgT8WNG-WxXJBnCtvmfp9NHen_VGJwOsZNxOlJ5OTx_jQ/viewform?usp=header"
           >
-            Register Now
+            Join Now
           </Button>
         </Box>
       </Box>
