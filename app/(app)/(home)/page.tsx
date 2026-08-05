@@ -112,80 +112,47 @@ function Banner() {
         }}
       />
       <Box
-  sx={{
-    zIndex: 999,
-    width: "100%",
-    height: "100%",
-    display: "flex",
-  }}
->
-  <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      width: "100%",
-      p: 5,
-      mt: "auto",
-      gap: 6,
-    }}
-  >
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: { xs: "column", md: "row" },
-        alignItems: { md: "center" },
-        gap: 4,
-      }}
-    >
-      <Box sx={{ flexGrow: 1 }}>
-        <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
-          Welcome to IHSIMUN
-        </Typography>
-        <Typography variant="h6" sx={{ mb: 2 }}>
-          It is an honor and our pleasure to welcome you all to the third
-          iteration of the Irvine Invitational Conference at Irvine High
-          School, California.
-        </Typography>
-      </Box>
-
-      <Button
-        variant="contained"
-        target="_blank"
-        sx={{ flexShrink: 0, height: "fit-content" }}
-        href="https://docs.google.com/forms/d/1Qb4fyQ9srmuGpI5SnWSjoDKjaul9joiYKAdVQnIBLEk/viewform?usp=header"
+        sx={{
+          zIndex: 999,
+          width: "100%",
+          height: "100%",
+          display: "flex",
+        }}
       >
-        Register Now
-      </Button>
-    </Box>
+        <Box
+          sx={{
+            display: "flex",
+            width: "100%",
+            p: 5,
+            mt: "auto",
+            flexDirection: { xs: "column", md: "row" },
+            alignItems: { sm: "center" },
+            gap: 5,
+            "& .btn": { flexShrink: 0, marginTop: { xs: 0, sm: "100px" } },
+          }}
+        >
+          <Box>
+            <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
+              Welcome to IHSIMUN
+            </Typography>
+            <Typography variant="h6" sx={{ mb: 2 }}>
+              It is an honor and our pleasure to welcome you all to the third
+              iteration of the Irvine Invitational Conference at Irvine High
+              School, California.
+            </Typography>
+          </Box>
 
-    <Box
-      sx={{
-        display: "flex",
-        flexDirection: { xs: "column", md: "row" },
-        alignItems: { md: "center" },
-        gap: 4,
-      }}
-    >
-      <Box sx={{ flexGrow: 1 }}>
-        <Typography variant="h1" fontWeight={900} sx={{ mb: 2 }}>
-          Join our mailing list
-        </Typography>
-        <Typography variant="h6" sx={{ mb: 2 }}>
-          Receive important updates via email and stay up to date for IHSIMUN 2026.
-        </Typography>
+          <Button
+            variant="contained"
+            target="_blank"
+            className="btn"
+            href="https://docs.google.com/forms/d/1Qb4fyQ9srmuGpI5SnWSjoDKjaul9joiYKAdVQnIBLEk/viewform?usp=header"
+          >
+            Register Now
+          </Button>
+        </Box>
       </Box>
-
-      <Button
-        variant="contained"
-        target="_blank"
-        sx={{ flexShrink: 0, height: "fit-content" }}
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfzWNgT8WNG-WxXJBnCtvmfp9NHen_VGJwOsZNxOlJ5OTx_jQ/viewform?usp=header"
-      >
-        Join List
-      </Button>
     </Box>
-  </Box>
-</Box>
   );
 }
 
@@ -197,4 +164,3 @@ export default function Page() {
     </>
   );
 }
-
